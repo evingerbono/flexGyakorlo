@@ -1,0 +1,54 @@
+main,article,nav{
+    border: 1px solid lightskyblue;
+}
+img{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: aqua;
+}
+article{
+    flex: 0 0 50%;
+    display: flex;
+    gap: 10px;
+}
+aside{
+    flex: 0 0 24%;
+}
+nav{
+    flex: 0 0 100%;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px;
+    font-weight: bold;
+    font-size:20px ;
+}
+.nav{
+    background-color: lightgreen;
+    text-align: start;
+}
+footer{
+    flex: 0 0 100%;
+}
+.elso{
+    flex: 0 0 25%;
+}
+@media screen and (max-width:600px) {
+    article{
+        flex-direction: column;
+        
+    }
+    main{
+        flex-direction: column;
+    }    
+    aside{
+        order: 2;
+    }
+}
